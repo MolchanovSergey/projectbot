@@ -1,7 +1,6 @@
 .coverage
-.dockerignore
 .env
 /.help
 .DS_Store
 /__pycache__
-/app_data
+
