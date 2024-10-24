@@ -376,15 +376,6 @@ async def add_finish_date(message: types.Message, state: FSMContext):
         await state.finish()
         await message.reply('Добавление информации о интересующей ценной бумаге отменено')
 
-user_stocks = Stock.get_user_stocks(123)
-
-for stock in user_stocks:
-    print(f"Owner ID: {stock.owner_id}")
-    print(f"Stock ID: {stock.stock_id}")
-    print(f"Quantity: {stock.quantity}")
-    print(f"Unit Price: {stock.unit_price}")
-    print(f"Purchase Date: {stock.purchase_date}")
-    print()
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
